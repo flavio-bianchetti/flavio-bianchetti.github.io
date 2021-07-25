@@ -5,78 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portifólio de Flávio Bianchetti</title>
-        <style>
-            body {
-                font-family: monospace;
-                background-color: #66d7d1;
-            }
-
-            h1 {
-                font-family: sans-serif;
-                font-weight: bold;
-            }
-
-            .about-me {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 16px;
-            }
-
-            .info {
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 14px;
-            }
-
-            strong {
-                font-family: Georgia, 'Times New Roman', Times, serif;
-            }
-
-            .li-position-1 {
-                font-size: 24px;
-                font-weight: bold;
-            }
-
-            .li-position-2 {
-                font-size: 22px;
-                font-weight: bold;
-            }
-
-            .li-position-3 {
-                font-size: 20px;
-                font-weight: bold;
-                
-            }
-
-            .li-position-4 {
-                font-size: 20px;
-            }
-
-            .li-position-5 {
-                font-size: 18px;
-            }
-
-            .li-position-6 {
-                font-size: 16px;
-            }
-
-            .li-position-7 {
-                font-size: 14px;
-            }
-
-            .li-position-8 {
-                font-size: 12px;
-            }
-
-            .li-position-9 {
-                font-size: 10px;
-            }
-
-            .li-position-10 {
-                font-size: 8px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
-
         <div>
             <p> 
                 <a href="#quemSou">Quem sou eu</a>  |  
@@ -87,44 +18,51 @@
         <div id="titulo">
             <h1>Flávio José Bianchetti</h1>    
         </div>
-        <div id="imagem">
+
+        <div class="myImage" id="imagem">
             <img width="200" src="profile.jpg" alt="Flávio Bianchetti sorrindo, vestindo uma camisa xadrez em tons pretos e brancos em frente a uma parede chapiscada na cor cinza escuro">
         </div>
-        <div id="quemSou">
+
+        <div class="whoIAm" id="quemSou">
             <h3>Quem sou eu?</h3>
             <p class="about-me">Sou apaixonado pela minha familia e pela tecnologia. Atualmente estou estudando na <br>Trybe para me tornar uma pessoa desenvolvedora e realizar um antigo sonho.</p>
-            <p class="info"><strong>Nacionalidade:</strong> Brasileiro <br>
-                <strong>Naturalidade:</strong> Barbacena - Minas Gerais <br>
-                <strong>Idade:</strong> 46 anos <br>
+            <p class="info"><span>Nacionalidade:</span> Brasileiro <br>
+                <span>Naturalidade:</span> Barbacena - Minas Gerais <br>
+                <span>Idade:</span> 46 anos <br>
                 Reside atualmente em Barbacena - Minas Gerais</p>
         </div>
+
         <div id="habilidades">
             <h3>Habilidades que mais me orgulho</h3>
             <ul>
-                <li class="li-position-1">Git</li>
-                <li class="li-position-2">Trabalhar em equipe</li>
-                <li class="li-position-3">Gosto pelo aprendizado</li>
+                <li>Git</li>
+                <li>Trabalhar em equipe</li>
+                <li>Gosto pelo aprendizado</li>
             </ul>
         </div>
+
         <div>
             <h3>Outras Habilidades:</h3>
             <ul>
-                <li class="li-position-4">Unix</li>
-                <li class="li-position-5">Bash</li>
-                <li class="li-position-6">HTML</li>
-                <li class="li-position-7">CSS</li>
-                <li class="li-position-8">JavaScript</li>
-                <li class="li-position-9">Planilhas</li>
-                <li class="li-position-10">Redes e Manutenção</li>
+                <li>Unix</li>
+                <li>Bash</li=>
+                <li>HTML</li=>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Planilhas</li>
+                <li>Redes e Manutenção</li>
             </ul>
-        </div>
-        <div id="minhaImagem">
-            <h3>Minha imagem</h3>
-            <a href="profile.jpg" target="_blank">foto</a>
         </div>
         <div id="sitesRecomendo">
             <h3>Sites que recomendo:</h3>
-            <a href="https://betrybe.com/" target="_blank">Trybe</a>
+            <ul type="square">
+                <li><a href="https://www.betrybe.com/" target="_blank">Trybe</a></li>
+                <li><a href="https://www.codewars.com/" target="_blank">CodeWars</a></li>
+                <li><a href="https://www.w3.org/" target="_blank">W3.org</a></li>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://github.com/" target="_blank"> GitHub</a></li> <!--<div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+                <li><a href="https://www.futureme.org/" target="_blank">FuruteMe</a></li>
+            </ul>
         </div>
     </body>
 </html>
