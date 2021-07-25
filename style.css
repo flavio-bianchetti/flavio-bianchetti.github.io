@@ -1,15 +1,23 @@
 body {
     font-family: monospace;
-    background-color: #66d7d1;
+    font-size: 12px;
+    font-weight: none;
+    padding: 0;
+    background-color: #E1CDB5;
 }
 
 h1 {
     font-family: sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 span {
     font-weight: bold;
+}
+
+div {
+    padding: 5px;
 }
 
 div:nth-of-type(4) p:nth-of-type(1) {
@@ -69,3 +77,22 @@ div:nth-of-type(6) li:nth-of-type(6) {
 div:nth-of-type(6) li:nth-of-type(7) {
     font-size: 1.1em;
 }
+
+div li:nth-of-type(odd) {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.whoIAm {
+    position: absolute;
+    left: 250px;
+    top: 160px;
+    max-width: 80%;
+}
+
+.myImage img {
+    border-radius: 50% 50%;
+    padding: 0px 5px 5px 0px;
+    background-color: #B7990D;
+}
+
