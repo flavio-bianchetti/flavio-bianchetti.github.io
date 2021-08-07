@@ -1,0 +1,357 @@
+:root {
+  --my-strong-color: #202020; /* 242424 */
+  --my-medium-color: #333533; /* 333533 */
+  --my-light-color: #FFD100; /* 848484 */
+  --my-lighter-hover-color: #FFEE32; /* e1e1e1 */
+  --my-lighter-color: #D6D6D6; /* ffffff */
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif; /* sets default site font*/
+  color: var(--my-lighter-color); /* sets default site font color */
+  background-color: var(--my-medium-color); /* sets default background site color*/
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--my-lighter-hover-color);
+  margin: 0;
+  margin-top: 20px;
+  text-shadow: 4px 4px var(--my-strong-color);
+  text-align: center;
+}
+
+h2 {
+  color: var(--my-lighter-color);
+  text-align: center;
+  text-shadow: 4px 4px var(--my-strong-color);
+  padding-top: 10px;
+}
+
+
+table {
+  position: relative;
+  margin: auto;
+}
+
+table, tr, th, td {
+  border: 2px solid var(--my-strong-color);
+  text-align: center;
+}
+
+table th {
+  background-color: var(--my-strong-color);
+  color: var(--my-light-color);
+}
+
+table td {
+  padding: 10px;
+}
+
+.header {
+  background-color: var(--my-strong-color); /* sets background color of header to '242424' */
+  position: fixed; /* sets the 'fixed' position for the header. */
+  top: 0; 
+  right: 0;
+  left: 0;
+  padding: 30px;
+  z-index: 3;
+}
+
+.nav-header {
+  top: 15px;
+  right: 20px;
+  text-align: right;
+  position: fixed;
+}
+
+.nav-header a {
+  margin: 5px;
+  padding: 0;
+  color: var(--my-light-color);
+}
+
+.fa:hover {
+  color: var(--my-lighter-hover-color);
+  transition: .8s;
+}
+
+.navigator {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 4;
+}
+
+.navigator a {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--my-light-color);
+}
+
+.navigator a:hover {
+  background-color: var(--my-medium-color);
+  color: var(--my-lighter-hover-color);
+  transition: .7s;
+}
+
+.main {
+  margin: auto; /* centered margin setting */
+  margin-top: 70px; /* sets the top of the margin to '70px' */
+  max-width: 600px; /* centered margin setting */
+  padding-bottom: 10px;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#home {
+  padding: 0;
+  min-width: 75%;
+  height: 80vh; /* sets the height value to '80vh' */
+  border: 3px solid var(--my-strong-color);
+}
+
+#home h2 {
+  font-size: 18px;
+  margin: auto;
+  width: 50%;
+  text-align: right;
+  padding-top: 0;
+}
+
+.container {
+  position: relative;
+  margin: auto; /* sets the margin to 'auto' to center the div*/
+  margin-top: 60px; /* sets the margin top to '10px' */
+  height: 40vh; /* sets the height to '40vh' to expand the div height*/
+  width: 50%;
+  padding: 10px;
+}
+
+.container div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.container div p {
+  transform: rotate(45deg);
+  text-align: center;
+}
+
+#div-blue {
+  background-color: rgb(0, 0, 255);
+  transform: rotate(-45deg);
+  margin-left: 130px; /* align the left position of the blue box to '130px' */
+  margin-top: 70px; /* align the top position of the blue box to '70px' */
+  animation: blue-div-animate 3s linear;
+}
+
+@keyframes blue-div-animate {
+  0% {
+    background-color: var(--my-medium-color);
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+  10%, 40% {background-color: var(--my-medium-color);}
+  50%, 90% {background-color: rgb(0, 0, 255);}
+  100% {
+    background-color: rgb(0, 0, 255);
+    margin-top: 70px;
+    margin-left: 130px;
+  }
+}
+
+#div-blue p {
+  color: rgb(255, 255, 0);
+  animation: blue-animate 6s linear;
+}
+
+@keyframes blue-animate {
+  0%, 50% {color: rgba(255, 255, 0, 0.0);}
+  60%, 100% {color: rgba(255, 255, 0, 1);}
+}
+
+#div-red {
+  background-color: rgb(255, 0, 0);
+  transform: rotate(-45deg);
+  margin-left: 170px; /* align the left position of the red box to '170px' */
+  margin-top: 110px; /* align the top position of the red box to '110px' */
+  animation: red-div-animate 3s linear;
+}
+
+@keyframes red-div-animate {
+  0% {
+    background-color: var(--my-medium-color);
+    margin-top: 40px;
+    margin-left: 240px;
+  }
+  10%, 40% {background-color: var(--my-medium-color);}
+  50%, 90% {background-color: rgb(255, 0, 0);}
+  100% {
+    background-color: rgb(255, 0, 0);
+    margin-top: 110;
+    margin-left: 170px;
+  }
+}
+
+#div-red p {
+  color: rgb(0, 0, 255);
+  animation: red-animate 7s linear;
+}
+
+@keyframes red-animate {
+  0%, 50% {color: rgba(0, 0, 255, 0.0);}
+  60%, 100% {color: rgba(0, 0, 255, 1);}
+}
+
+#div-green {
+  background-color: rgb(0, 128, 0);
+  transform: rotate(-45deg);
+  margin-left: 130px; /* align the left position of the green box to '130px' */
+  margin-top: 150px; /* align the top position of the green box to '150px' */
+  animation: green-div-animate 3s linear;
+}
+
+@keyframes green-div-animate {
+  0% {
+    background-color: var(--my-medium-color);
+    margin-top: 220px;
+    margin-left: 200px;
+  }
+  10%, 40% {background-color: var(--my-medium-color);}
+  50%, 90% {background-color: rgb(0, 128, 0);}
+  100% {
+    background-color: rgb(0, 128, 0);
+    margin-top: 150px;
+    margin-left: 130px;
+  }
+}
+
+#div-green p {
+  color: rgb(255, 0, 0);
+  animation: green-animate 8s linear;
+}
+
+@keyframes green-animate {
+  0%, 50% {color: rgba(255, 0, 0, 0.0);}
+  60%, 100% {color: rgba(255, 0, 0, 1);}
+}
+
+#div-yellow {
+  background-color: rgb(255, 255, 0);
+  transform: rotate(-45deg);
+  margin-left: 90px; /* align the left position of the yellow box to '90px' */
+  margin-top: 110px; /* align the top position of the yellow box to '110px' */
+  animation: yellow-div-animate 3s linear
+}
+
+@keyframes yellow-div-animate {
+  0% {
+    background-color: var(--my-medium-color);
+    margin-top: 180px;
+    margin-left: 40px;
+  }
+  10%, 40% {background-color: var(--my-medium-color);}
+  50%, 90% {background-color: rgb(255, 255, 0);}
+  100% {
+    background-color: rgb(255, 255, 0);
+    margin-top: 110px;
+    margin-left: 90px;
+  }
+}
+
+#div-yellow p {
+  color: rgb(0, 128, 0);
+  animation: yellow-animate 9s linear;
+}
+
+@keyframes yellow-animate {
+  0%, 50% {color: rgba(0, 128, 0, 0.0);}
+  60%, 100% {color: rgba(0, 128, 0, 1);}
+}
+
+#aboutMe {
+  position: relative;
+  top: 400px;
+  padding: 0;
+  min-width: 75%;
+  height: 80vh; /* sets the height value to '80vh' */
+  border: 3px solid var(--my-strong-color);
+}
+
+#aboutMe img:nth-of-type( 1 ) {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 4px 4px var(--my-strong-color);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutMe img:nth-of-type( 2 ) {
+  float: left;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+#aboutMe  p {
+  text-indent: 40px;
+  text-align: justify;
+  padding: 10px;
+}
+
+#aboutMe a {
+  color: var(--my-lighter-color);
+}
+
+#skills {
+  position: relative;
+  top: 800px;
+  padding: 0;
+  min-width: 75%;
+  height: 80vh; /* sets the height value to '80vh' */
+  border: 3px solid var(--my-strong-color);
+}
+
+#hard-skills tr:nth-of-type( n + 1 ) td:nth-of-type( 1 ) {
+  color: var(--my-light-color);
+}
+
+#soft-skills tr:nth-of-type( n + 1 ) td:nth-of-type( 1 ){
+  color: var(--my-light-color);
+}
+
+#portfolio {
+  position: relative;
+  top: 1200px;
+  padding: 0;
+  min-width: 75%;
+  height: 80vh; /* sets the height value to '80vh' */
+  border: 3px solid var(--my-strong-color);
+}
+
+#portfolio p {
+  text-indent: 40px;
+}
+
+#portfolio a {
+  color: var(--my-lighter-color);
+  line-height: 1.5;
+}
+
+#rodape {
+  position: fixed;
+  background-color: var(--my-strong-color);
+  margin: auto;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+#rodape p {
+  text-align: center;
+  color: var(--my-light-color);
+}

@@ -4,65 +4,97 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifólio de Flávio Bianchetti</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Flávio Bianchetti - Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
-        <div>
-            <p> 
-                <a href="#quemSou">Quem sou eu</a>  |  
-                <a href="#habilidades">Minhas habilidades</a>  |  
-                <a href="#sitesRecomendo">Sites que recomendo</a></p>
-        </div>
-
-        <div id="titulo">
-            <h1>Flávio José Bianchetti</h1>    
-        </div>
-
-        <div class="myImage" id="imagem">
-            <img width="200" src="profile.jpg" alt="Flávio Bianchetti sorrindo, vestindo uma camisa xadrez em tons pretos e brancos em frente a uma parede chapiscada na cor cinza escuro">
-        </div>
-
-        <div class="whoIAm" id="quemSou">
-            <h3>Quem sou eu?</h3>
-            <p class="about-me">Sou apaixonado pela minha familia e pela tecnologia. Atualmente estou estudando na <br>Trybe para me tornar uma pessoa desenvolvedora e realizar um antigo sonho.</p>
-            <p class="info"><span>Nacionalidade:</span> Brasileiro <br>
-                <span>Naturalidade:</span> Barbacena - Minas Gerais <br>
-                <span>Idade:</span> 46 anos <br>
-                Reside atualmente em Barbacena - Minas Gerais</p>
-        </div>
-
-        <div id="habilidades">
-            <h3>Habilidades que mais me orgulho</h3>
-            <ul>
-                <li>Git</li>
-                <li>Trabalhar em equipe</li>
-                <li>Gosto pelo aprendizado</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Outras Habilidades:</h3>
-            <ul>
-                <li>Unix</li>
-                <li>Bash</li=>
-                <li>HTML</li=>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Planilhas</li>
-                <li>Redes e Manutenção</li>
-            </ul>
-        </div>
-        <div id="sitesRecomendo">
-            <h3>Sites que recomendo:</h3>
-            <ul type="square">
-                <li><a href="https://www.betrybe.com/" target="_blank">Trybe</a></li>
-                <li><a href="https://www.codewars.com/" target="_blank">CodeWars</a></li>
-                <li><a href="https://www.w3.org/" target="_blank">W3.org</a></li>
-                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://github.com/" target="_blank"> GitHub</a></li> <!--<div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
-                <li><a href="https://www.futureme.org/" target="_blank">FuruteMe</a></li>
-            </ul>
-        </div>
+        <header class="header">
+            <nav class="nav-header">
+                <a target="_blank" href="https://github.com/flavio-bianchetti"><i class="fa fa-github" style="font-size:36px;"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/flaviobianchetti/"><i class="fa fa-linkedin-square" style="font-size:36px;"></i></a>
+            </nav>
+        </header>
+        <nav class="navigator">
+            <a href="#home"><i>Home</i></a>
+            <a href="#aboutMe"><i>About me</i></a>
+            <a href="#skills"><i>Skills</i></a>
+            <a href="#portfolio"><i>Portfolio</i></a></p>
+        </nav>
+        <main class="main">
+            <section id="home">
+                <h1>Flávio Bianchetti</h1>
+                <h2><i>web development student</i></h2>
+                <div class="container">
+                    <div id="div-blue"><p>GitHub</p></div>
+                    <div id="div-red"><p>HTML</p></div>
+                    <div id="div-green"><p>CSS</p></div>
+                    <div id="div-yellow"><p>JS</p></div>
+                </div>
+            </section>
+            <section id="aboutMe">
+                <h1>About me</h1>
+                <img width="120" src="./images/flavio-bianchetti-298x298.jpg" alt="Flávio Bianchetti smiling, wearing a blue shirt with black details and white stripes on his shoulders.">
+                <p>My name is Flávio José Bianchetti and I am 46 years old. I live in Barbacena, Minas Gerais - Brazil. I am passionate about my family and technology.
+                    I have a degree in Computer Science and am currently a web development student at <a href="http://www.betrybe.com" target="_blank"><i>Trybe</i></a>.</p>
+                <img width="140" src="./images/trybe_logo-300x174.png" alt="Trybe logo">
+                <p>The web development training program from Trybe has a workload of 1500 hours that covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills. The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Express.js, SQL, Git [...] among others languages and frameworks.</p>
+            </section>
+            <section id="skills">
+                <h1>Habilites</h1>
+                    <div id="left-side-skills">
+                        <h2>Hard Skills</h2>
+                        <table id="hard-skills">
+                            <tr>
+                                <th>Contents</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>English language</td>
+                                <td>Learning - permanent development</td>
+                            </tr>
+                            <tr>
+                                <td>Git and GitHub</td>
+                                <td>Learned - in improvement</td>
+                            </tr>
+                            <tr>
+                                <td>HTML and CSS</td>
+                                <td>Learning</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>Learning</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="right-side-skills">
+                        <h2>Soft Skills</h2>
+                        <table id="soft-skills">
+                            <tr>
+                                <th>Contents</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>Emotional intelligence</td>
+                                <td>Learning - permanent development</td>
+                            </tr>
+                        </table>
+                    </div>
+            </section>
+            <section id="portfolio">
+                <h1>Portfolio</h1>
+                <p>Here are listed the projects developed during the Trybe course (2021-2022).</p>
+                <ul>
+                    <li><a href="https://flavio-bianchetti-lessons-learned.github.io/" target="_blank">Project Lessons Learned - August 3, 2021</a></li>
+                    <li><a>Project Playground Functions - August 10, 2021 - <strong>coming soon</strong></a></li>
+                </ul>
+            </section>
+        </main>
+        <footer id="rodape">
+            <p><i>Flávio Bianchetti - 2021</i></p>
+        </footer>
     </body>
 </html>
